@@ -1,0 +1,10 @@
+[15-May-2025 11:32:04 UTC] PHP Warning:  include(/home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/../fakerphp/faker/src/Faker/Factory.php): Failed to open stream: No such file or directory in /home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/ClassLoader.php on line 576
+[15-May-2025 11:32:04 UTC] PHP Warning:  include(): Failed opening '/home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/../fakerphp/faker/src/Faker/Factory.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/ClassLoader.php on line 576
+[15-May-2025 11:32:04 UTC] PHP Warning:  require(/home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/../myclabs/deep-copy/src/DeepCopy/deep_copy.php): Failed to open stream: No such file or directory in /home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/autoload_real.php on line 41
+[15-May-2025 11:32:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/../myclabs/deep-copy/src/DeepCopy/deep_copy.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/autoload.php(25): ComposerAutoloaderInit5623e584abdc1e432f0017b36dfcb42d::getLoader()
+#2 /home/larprade/subdomens/soccer.larpradeda.com.ua/public/index.php(14): require('/home/larprade/...')
+#3 {main}
+  thrown in /home/larprade/subdomens/soccer.larpradeda.com.ua/vendor/composer/autoload_real.php on line 41

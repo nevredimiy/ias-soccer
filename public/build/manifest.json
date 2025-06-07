@@ -1,0 +1,30 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-DGw-a56-.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/fonts/icons.woff2": {
+    "file": "assets/icons-Dor1rMaf.woff2",
+    "src": "resources/css/fonts/icons.woff2"
+  },
+  "resources/css/style.css": {
+    "file": "assets/style-CizvZ-qv.css",
+    "src": "resources/css/style.css",
+    "isEntry": true
+  },
+  "resources/img/color-cross.svg": {
+    "file": "assets/color-cross-DzRxeWbE.svg",
+    "src": "resources/img/color-cross.svg"
+  },
+  "resources/img/player/award.svg": {
+    "file": "assets/award-B0PckSW8.svg",
+    "src": "resources/img/player/award.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-s9-lu0GS.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
