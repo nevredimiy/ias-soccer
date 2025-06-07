@@ -2610,7 +2610,8 @@ body::after {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: .25rem
+  gap: .25rem;
+  margin-top: 40px;
 }
 .account__rating-block:not(:last-child) {
   margin-bottom: 1.875rem
