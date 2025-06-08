@@ -118,7 +118,7 @@
                 @error('tg') <span class="error text-red-600">{{ $message }}</span> @enderror
             </div>
 
-            <button type="submit" class="account__button button button--green">
+            <button type="submit" class="formbase__button button button--green">
                 <span>СТВОРИТИ КАБІНЕТ ГРАВЦЯ</span>
             </button>
         </div>
