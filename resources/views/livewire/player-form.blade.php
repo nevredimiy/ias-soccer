@@ -27,7 +27,7 @@
                     @error('firstname') <span class="error text-red-600">{{ $message }}</span> @enderror
                 </div>
                 <div class="formbase__field">
-                    <div class="formbase__label date">ДАТА НАРОДЖЕННЯ</div>
+                    <div class="formbase__label">ДАТА НАРОДЖЕННЯ</div>
                     <div class="formbase__date">
                         <input 
                             type="number" 
@@ -74,7 +74,7 @@
 
         <div class="account__rating-set">
             <div class="account__rating-block">
-                <div class="account__label label-acount">
+                <div class="formbase__label">
                     *ОБРАТИ СВІЙ РІВЕНЬ
                 </div>
                 <div class="account__rating rating">

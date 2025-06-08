@@ -59,6 +59,14 @@ class PlayerForm extends Component
         $this->rating = $value;
     }
 
+    public function updated($property)
+    {
+        if (in_array($property, ['day', 'month'])) {
+            $this->$property = (int) $this->$property;
+        }
+    }
+
+
     public function submit()
     {
         $this->validate();
