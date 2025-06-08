@@ -25,9 +25,7 @@
                 <div class="protocol__content">
                     @foreach ($match->matchEvents as $event)
                     
-                        @if ($event->type == 'goal')
-
-                            
+                        @if ($event->type == 'goal')                            
 
                             <div class="protocol__item {{$colorClasses[$event->team->color->name]}}">
                                 <span class="protocol__ball @if ($event->team_id == $match->team1_id)
