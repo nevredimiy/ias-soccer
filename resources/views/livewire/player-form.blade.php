@@ -75,7 +75,7 @@
                 <span>СТВОРИТИ КАБІНЕТ ГРАВЦЯ</span>
             </button>
         </div>
-
+{{-- 
         <div>
 
             <div class="rating__items">
@@ -89,7 +89,7 @@
                 @endfor
             </div>
     
-        </div>
+        </div> --}}
 
     </form>
 </div>
