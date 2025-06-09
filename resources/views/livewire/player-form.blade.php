@@ -26,7 +26,7 @@
                     >
                     @error('firstname') <span class="error text-red-600">{{ $message }}</span> @enderror
                 </div>
-                <div class="formbase__field">
+                <div class="formbase__field col-span-full">
                     <div class="formbase__label">ДАТА НАРОДЖЕННЯ</div>
                     <div class="formbase__date">
                         <input 
@@ -118,7 +118,7 @@
                 @error('tg') <span class="error text-red-600">{{ $message }}</span> @enderror
             </div>
 
-            <button type="submit" class="formbase__button button button--green">
+            <button type="submit" class="formbase__button button button--green col-span-full">
                 <span>СТВОРИТИ КАБІНЕТ ГРАВЦЯ</span>
             </button>
         </div>

@@ -164,37 +164,47 @@ class SeriesMetaResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('event_id')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('stadium.name')
                     ->label('Стадіон')
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('stadium.location.district.city.name')
                     ->label('Місто')
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('stadium.location.district.name')
                     ->label('Район')
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('stadium.location.address')
                     ->label('Адреса')
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('size_field')
                     ->label('Розмір поля')
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('start_date')
                     ->dateTime()
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('end_date')
                     ->dateTime()
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('series')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('round')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('price')
                     ->money('UAH')
-                    ->sortable(),
+                    ->sortable()
+                     ->searchable(),
                 Tables\Columns\TextColumn::make('status_registration')                
                     ->label('Статус')
                     ->formatStateUsing(fn ($state) => [

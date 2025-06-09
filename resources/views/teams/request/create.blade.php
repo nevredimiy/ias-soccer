@@ -28,7 +28,7 @@
                                 <input type="text" placeholder="Назва команди" name="name" class="team-setup__input" value="{{ old('name') }}">
                             </div>
                           
-                            <livewire:team-logo-uploader />
+                            {{-- <livewire:team-logo-uploader /> --}}
         
                             <div class="team-setup__footer">
                                 <div class="team-setup__field">

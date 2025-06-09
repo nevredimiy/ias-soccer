@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Створення команди')
+@section('title', 'Персональні дані гравця')
 
 @section('content')
 <div class="page__container">

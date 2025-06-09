@@ -8,38 +8,24 @@
         <div class="page__contacts contacts">
             <div class="contacts__block _block">
                 <div class="contacts__items">
-                    <div class="contacts__item item-contacts">
-                        <div class="item-contacts__image">
-                            <img src="img/contacts/01.webp" alt="Image" class="ibg ibg--contain">
-                        </div>
-                        <div class="item-contacts__body">
-                            <h3 class="item-contacts__title">
-                                МАКСИМ МАМЕДОВ
-                            </h3>
-                            <div class="item-contacts__label">
-                                Організатор
+                    @foreach ($contacts as $contact)
+                        <div class="contacts__item item-contacts">
+                            <div class="item-contacts__image">
+                                <img src="{{asset('storage/' . $contact->photo)}}" alt="Image" class="ibg ibg--contain">
                             </div>
-                            <div class="item-contacts__label">
-                                <a href="#">+380932735767</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contacts__item item-contacts">
-                        <div class="item-contacts__image">
-                            <img src="img/contacts/02.webp" alt="Image" class="ibg ibg--contain">
-                        </div>
-                        <div class="item-contacts__body">
-                            <h3 class="item-contacts__title">
-                                АНДРІЙ ПАЛАМАРЧУК
-                            </h3>
-                            <div class="item-contacts__label">
-                                АДМІНІСТРАТОР
-                            </div>
-                            <div class="item-contacts__label">
-                                <a href="#">+380934319492</a>
+                            <div class="item-contacts__body">
+                                <h3 class="item-contacts__title">
+                                    {{ $contact->full_name }}
+                                </h3>
+                                <div class="item-contacts__label">
+                                    {{ $contact->position }}
+                                </div>
+                                <div class="item-contacts__label">
+                                    <a href="tel:{{$contact->phone}}">{{ $contact->phone }}</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

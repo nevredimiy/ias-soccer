@@ -24,6 +24,7 @@ use App\Http\Controllers\TeamSeriesController;
 use App\Http\Controllers\TeamRequestController;
 use App\Http\Controllers\TournamentController;
 use App\Http\Controllers\ManagerSeriesController;
+use App\Http\Controllers\ContactController;
 use App\Livewire\PreRegisterForm;
 
 use App\Models\Article;
@@ -122,9 +123,7 @@ Route::middleware(['auth'])->group(function () {
 
 });
 
-Route::get('/contacts', function () {
-    return view('pages.contacts');
-})->name('contacts');
+Route::get('/contacts', [ContactController::class, 'index'])->name('contacts');
 
 Route::get('/article/{article}', function (Article $article) {
     return view('article.show', compact('article'));
