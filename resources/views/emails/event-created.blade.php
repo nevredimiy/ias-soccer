@@ -8,7 +8,7 @@
     <p>Деталі: {{ $event->tournament->name }}</p>
     <p><a href="{{asset('teams/series/' . optional($event->seriesMeta->first())->id)}}">Перейти щоб зареєструватися у турнірі</a></p>
 </div>
-<x-mail.footer>
+
 <svg fill="none" version="1.1" viewBox="0 0 110 96.059" xmlns="http://www.w3.org/2000/svg">
  <g transform="translate(0 -6.6)" fill="#1a1a1a" stroke="#000">
   <rect x="-3.5527e-15" y="6.6" width="110" height="96.059" ry="1.0557" fill="#156eaa" fill-rule="evenodd" stroke="none"/>
@@ -65,5 +65,5 @@
   </linearGradient>
  </defs>
 </svg>
-</x-mail.footer>
+
 </x-mail.layout>
