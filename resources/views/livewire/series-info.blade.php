@@ -108,7 +108,7 @@
             <div class="hero-tournament__rating rating">
                 <div class="rating__items">
                     @for ($i=0; $i<10; $i++)
-                    <label class="rating__item @if ($i < $seriesMeta->average_player_rating)
+                    <label style="cursor: auto;" class="rating__item @if ($i < $seriesMeta->average_player_rating)
                         rating__item--active
                         @endif">
                         <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">

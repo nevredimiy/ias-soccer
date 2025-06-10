@@ -9,6 +9,9 @@ use App\Models\SeriesMeta;
 use App\Models\Tournament;
 use App\Models\Team;
 use App\Models\Matche;
+use App\Models\User;
+use App\Mail\EventCreatedMail;
+use Illuminate\Support\Facades\Mail;
 use Carbon\Carbon;
 use App\Services\SeriesTemplatesService;
 
@@ -49,6 +52,17 @@ class CreateEvent extends CreateRecord
         }
         
         $this->redirect(EventResource::getUrl());
+
+        // Рассылка писем на email пользователям
+        if($tournament->type !== 'solo_private'){
+            $users = User::where('id', '>', 117)->get();
+    
+            $event->load(['tournament', 'seriesMeta']);
+            
+            foreach ($users as $user) {
+                Mail::to($user->email)->send(new EventCreatedMail($event));
+            }
+        }
     }
 
     protected function createSeriesMeta(Tournament $tournament, int $eventId, array $data): void
